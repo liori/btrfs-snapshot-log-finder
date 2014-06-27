@@ -16,8 +16,6 @@ def test_parse_list_output_single_line():
 
 
 def test_parse_list_output():
-    pytest.skip('Requirement for #1 ("Have a function to parse `btrfs subvolume find-new` output."')
-
     text = '''
 ID 2090 gen 3307 top level 5 path temp2/s9
 ID 2091 gen 3308 top level 5 path temp2/s10
