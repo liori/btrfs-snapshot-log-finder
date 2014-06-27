@@ -1,5 +1,11 @@
 import pytest
 
+from ..btrfs import parse_list_output
+
+
+def test_parse_list_output_exists():
+    assert parse_list_output
+
 
 def test_parse_list_output():
     pytest.skip('Requirement for #1 ("Have a function to parse `btrfs subvolume find-new` output."')
