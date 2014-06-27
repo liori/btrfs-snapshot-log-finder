@@ -7,6 +7,14 @@ def test_parse_list_output_exists():
     assert parse_list_output
 
 
+def test_parse_list_output_single_line():
+    text = 'ID 2093 gen 3312 top level 5 path temp2/s11'
+    
+    expected = [(2093, 3312, 'temp2/s11')]
+    
+    assert list(parse_list_output(text)) == expected
+
+
 def test_parse_list_output():
     pytest.skip('Requirement for #1 ("Have a function to parse `btrfs subvolume find-new` output."')
 
